@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilos.css">
+    
+</head>
+<body>
+    <div class="parte1">
+        <img src="imagenes/Logo.png" alt="Logo de Alura">
+    </div>
+    <main>
+        <section class="parte2">
+            <div class="divTexto">
+                <textarea class="texto" id="texto" placeholder="Ingrese el texto aqui" cols="35" rows="15"></textarea>
+                <label class="instruccion"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                  </svg> Solo letras minúsculas y sin acentos</label>
+                  <button onclick="botonEnc();" id="encriptar" class="encriptar">Encriptar</button>
+                  <button onclick="botonDes();" class="desencriptar">Desencriptar</button> 
+            </div><div class="divCaja">             
+                <div class="pantalla"  id="imagen">
+                    <img src="imagenes/Muneco.png" class="muñeco">
+                    <h2><p>Ningún mensaje fue encontrado</p></h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <textarea class="resultado" id="resultado" cols="24" rows="20" readonly></textarea>
+                <button onclick="botonCopiar();" id="copiar" class="copiar">Copiar</button>
+            </div>
+        </section>
+    </main> 
+    <footer>
+        <p>Creado por <span>Jalfa02</span></p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
